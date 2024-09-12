@@ -1,35 +1,91 @@
-html {
-    box-sizing:border-box;
+html
+{
+    box-sizing: border-box;
     font-size: 62.5%;
 }
 
-body{
+body 
+{
     font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
-    background-color: yellow;
+    font-family: 'lato', sans-serif;
+    background-color: rgb(208, 214, 214);
 }
 
-*,* :before, *:after{
-    box-sizing: inherit;
-}
-
-header{
+header
+{
     padding: 3rem 0;
 }
-
-header h1{
+header h1 {
     text-align: center;
-    color: darkturquoise;
+    color: aquamarine;
     font-size: 6rem;
 }
-
 header p {
-    color: aliceblue;
+    color: hotpink;
     text-align: center;
     font-size: 3.2rem;
 }
-
-header p a{
+header p a {
     text-decoration: none;
-    color: blue;
+    color: rgb(21, 72, 212);
+}
+
+.DOM{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+ 
+.DOM h2{
+    color: rgb(50, 18, 192);
+    text-align: center;
+}
+
+.DOM nav a {
+    color: chartreuse;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.DOM p{
+    color: rgb(233, 236, 26);
+    font-size: 20px;
+}
+
+.DOM #formulario{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.DOM #formulario input{
+    display: block;
+    width: 100%;
+    border: none;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.DOM #formulario input [type="submit"]{
+    background-color:rgb(227, 233, 233);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: chocolate;
+}
+
+.alerta{
+    padding: 1rem;
+    text-align: center;
+    color: yellowgreen;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.alerta.error {
+    background-color: yellow;
+}
+
+.alerta.exito{
+    background-color: violet;
 }
