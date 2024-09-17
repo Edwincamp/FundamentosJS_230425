@@ -1,30 +1,35 @@
-const alumno="Juan"
-let producto = "Monitor 20 pulgadas"
+//objetos
+const nombre= "Tablet"
+const precio = 300
+const disponible = true
 
-const numero = "30"
-const numero2 = 30
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
+console.log(producto)
+console.table(producto)
 
-console.log (typeof numero)
-console.log (typeof numero2)
+console.log(producto.nombre)
+console.log(precio.nombre)
+console.log(disponible.nombre)
 
+//destructing
 
-const numeroGrande = BigInt (9182981948)
-console.log (typeof numeroGrande)
+const {nombre2, precio2, disponible2} = producto
+console.log(nombre)
+console.log(precio)
+console.log(disponible)
 
-const numeero = 10
-const numero4 = 20
-//console.log (numero = Number (numeroGrande))
+//objeto literal enchament
 
-const numero6 ="30"
-const numero5 = 30
-console.log (typeof String  (numero))
-console.log (typeof Number(numero2))
+const autenticado = true
+const usuario = "edwin"
+const nuevoObjeto ={
+    autenticado : autenticado, 
+    usuario:usuario
 
-const primerSymbol =Symbol (30)
-const segundoSymbol = Symbol (30)
-console.log (primerSymbol === segundoSymbol)
-console.log (primerSymbol.valueOf())
-
-const descuento =null
-console.log(typeof descuento)
+}
+console.table(nuevoObjeto)
 
