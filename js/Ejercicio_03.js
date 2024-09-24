@@ -119,4 +119,4 @@ let Costo_Compra= Producto_Precio2 * Pedido_Cantidad;
 
 console.log(`El cliente ha agregado a su carrito de compras ${Pedido_Cantidad} undidades, con un costo total de: $${Costo_Compra}`);
 if(Costo_Compra< Cliente_SaldoActual)
- console.log("El cliente tiene saldo suficiente.");
+ console.log("El cliente tiene saldo suficienteee.");
