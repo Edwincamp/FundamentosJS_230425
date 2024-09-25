@@ -120,3 +120,49 @@ let Costo_Compra= Producto_Precio2 * Pedido_Cantidad;
 console.log(`El cliente ha agregado a su carrito de compras ${Pedido_Cantidad} undidades, con un costo total de: $${Costo_Compra}`);
 if(Costo_Compra< Cliente_SaldoActual)
  console.log("El cliente tiene saldo suficienteee.");
+
+//console.warn("Práctica 05: Repaso de Objetos en JavaScript");
+//Actualizar el valor de los objetos
+console.log("%c4.- Actualización de los valores de las propiedades de un objeto", style_console);
+
+console.log(`El objeto tiene los siguientes valores:`)
+console.log(JSON.stringify(Producto2,null,2));
+//convierte el objeto a una cadena para evitar problemas con la referencia
+console.log(`Por cuestiones de inflación el costo del producto ha cambiado y debe ser actualizado... de $6,829.00 a $6,915.50`)
+
+//Para modificar el valor de un objeto basta con igualar el nuevo valor de la propiedad
+Producto2.Precio=6915.50;
+console.log(`Los nuevos valores del Producto son:`)
+console.log(Producto2);
+
+// ¿Puedo cambiar no solo el valor sino el tipo de dato de un objeto en JS?
+
+console.log(`-----------------------------------------------------------------------------------`)
+console.log(`El objeto actualmente tiene los siguientes valores`)
+var tipoDisponibilidad= typeof(Producto2.Disponibilidad)
+console.log(`El tipo de dato de la disponibilidad es: ${tipoDisponibilidad}`)
+console.log(JSON.stringify(Producto2,null,2)); //Disponibilidad Boolean
+Producto2.Disponibilidad="Sí";
+let nuevoTipoDisponible= typeof(Producto2.Disponibilidad)
+console.log(Producto2);
+console.log(`El tipo de dato de la disponibilidad es: ${nuevoTipoDisponible}`)
+
+//aGREGAR NUEVAS PROPIEDADES AL OBJETO
+console.log("%c5.- Agregar nuevas propiedades al Objeto", style_console);
+//Para agregar una nueva propiedad utilizaremos el nombre del objeto los corchetes [] y el nuevo de la propiedad con su valor por defecto.
+console.log("Los datos actuales del comprador son: ")
+console.table(Comprador)
+Comprador[`Dirección`]="Av. Benito Juárez No. 1525, Interior 40, Xicotepec de JUárez, Puebla, México"
+Comprador[`Tipo`]="Nuevo Cliente"
+Comprador[`ActividadReciente`]= true
+Comprador[`TotalCompras`]=3516.25
+console.log("Despues de haber agregado las propiedades; Dirección, Tipo, ActividadReciente y TotalCompras... ")
+console.table(Comprador)
+
+//Eliminar propiedades existentes de un Objeto
+console.log("%c6.- Eliminar propiedades existentes de un Objeto", style_console);
+console.log("La estructura y valores del objeto PEDIDO son previos a la modificación:")
+console.table(Pedido)
+delete Pedido.TipoPago
+console.log("Despues de la modificación...")
+console.table(Pedido)
