@@ -292,7 +292,7 @@ console.log(`Esta el objeto de Comprador Sellado ? : ${Object.isSealed(Comprador
 
 console.log("Vamos a  verificar el estatus de mutabilidad del objeto Producto")
 console.log(`Esta el objeto de Producto Congelado ? : ${Object.isFrozen(Producto)}`);
-console.log(`Esta el objeto de Producto Sellado ? : ${Object.isSealed(Producto)}`);
+console.log(`esta el objeto de Producto Sellado ? : ${Object.isSealed(Producto)}`);
 
 // Modificamos la estructurado de producto, agregando una nueva propiedad
 Producto['isLegacy']=true; //Legacy means is not being produced anymore but still exists
